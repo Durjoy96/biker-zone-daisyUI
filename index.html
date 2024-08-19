@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -20,10 +20,60 @@
             font-family: "Poppins", sans-serif;
         }
     </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary_color: '#E76F51',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body class="poppins-thin">
-    
+    <header class="max-w-screen-lg mx-auto px-5 lg:mt-10">
+        <div class="navbar bg-base-100 flex">
+            <div class="navbar-start flex-1">
+                <a class="font-bold text-xl text-zinc-800 md:text-4xl">Bike Dekho</a>
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 lg:flex lg:items-center">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                    <li>
+                        <button class="ml-5 btn bg-primary_color text-white rounded hover:bg-primary_color lg:px-8 ">Sing In</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                    <li>
+                        <div>
+                            <button class="btn bg-primary_color text-white w-24">Sing In</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
