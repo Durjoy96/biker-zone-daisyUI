@@ -22,20 +22,20 @@
     </style>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                primary_color: '#E76F51',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary_color: '#E76F51',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body class="poppins-thin">
-    <header class="max-w-screen-lg mx-auto px-5 lg:mt-10">
+    <header class="max-w-screen-xl mx-auto px-5 lg:mt-10">
         <div class="navbar bg-base-100 flex">
             <div class="navbar-start flex-1">
                 <a class="font-bold text-xl text-zinc-800 md:text-4xl">Bike Dekho</a>
@@ -47,7 +47,9 @@
                     <li><a>News</a></li>
                     <li><a>Contact</a></li>
                     <li>
-                        <button class="ml-5 btn bg-primary_color text-white rounded hover:bg-primary_color lg:px-8 ">Sing In</button>
+                        <button
+                            class="ml-5 btn bg-primary_color text-white rounded hover:bg-primary_color lg:px-8 ">Sing
+                            In</button>
                     </li>
                 </ul>
             </div>
@@ -74,6 +76,69 @@
             </div>
         </div>
     </header>
+    <main class="max-w-screen-xl mx-auto px-5">
+        <section class="bg-primary_color/10 mt-12">
+            <div class="carousel w-full h-[600px]">
+                <div id="slide1" class="carousel-item relative w-full flex items-center justify-evenly">
+                    <div class="max-w-md">
+                        <h1 class="text-5xl font-bold text-zinc-800">Ride-on R15 V4 with Smile</h1>
+                        <p class="text-base font-normal text-zinc-500 mt-5">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn btn-lg mt-8 bg-primary_color text-white hover:bg-transparent hover:outline hover:outline-primary_color hover:text-primary_color">Purchase</button>
+                    </div>
+                    <img src="assets/images/slider/bike1.png" class="w-2/5" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle bg-transparent shadow-none text-zinc-700 hover:bg-primary_color/20 hover:text-primary_color hover:border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-transparent shadow-none text-zinc-700 hover:bg-primary_color/20 hover:text-primary_color hover:border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full flex items-center justify-evenly">
+                    <div class="max-w-md">
+                        <h1 class="text-5xl font-bold text-zinc-800">Ride-on R15 V4 with Smile</h1>
+                        <p class="text-base font-normal text-zinc-500 mt-5">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn btn-lg mt-8 bg-primary_color text-white hover:bg-transparent hover:outline hover:outline-primary_color hover:text-primary_color">Purchase</button>
+                    </div>
+                    <img src="assets/images/slider/bike2.png" class="w-2/5" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle bg-transparent shadow-none text-zinc-700 hover:bg-primary_color/20 hover:text-primary_color hover:border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-transparent shadow-none text-zinc-700 hover:bg-primary_color/20 hover:text-primary_color hover:border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full flex items-center justify-evenly">
+                    <div class="max-w-md">
+                        <h1 class="text-5xl font-bold text-zinc-800">Ride-on R15 V4 with Smile</h1>
+                        <p class="text-base font-normal text-zinc-500 mt-5">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn btn-lg mt-8 bg-primary_color text-white hover:bg-transparent hover:outline hover:outline-primary_color hover:text-primary_color">Purchase</button>
+                    </div>
+                    <img src="assets/images/slider/bike3.png" class="w-2/5" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle bg-transparent shadow-none text-zinc-700 hover:bg-primary_color/20 hover:text-primary_color hover:border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-transparent shadow-none text-zinc-700 hover:bg-primary_color/20 hover:text-primary_color hover:border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full flex items-center justify-evenly">
+                    <div class="max-w-md">
+                        <h1 class="text-5xl font-bold text-zinc-800">Ride-on R15 V4 with Smile</h1>
+                        <p class="text-base font-normal text-zinc-500 mt-5">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn btn-lg mt-8 bg-primary_color text-white hover:bg-transparent hover:outline hover:outline-primary_color hover:text-primary_color">Purchase</button>
+                    </div>
+                    <img src="assets/images/slider/bike4.png" class="w-2/5" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle bg-transparent shadow-none text-zinc-700 hover:bg-primary_color/20 hover:text-primary_color hover:border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-transparent shadow-none text-zinc-700 hover:bg-primary_color/20 hover:text-primary_color hover:border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>
